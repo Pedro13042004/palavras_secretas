@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Define o tipo de documento HTML -->
+<html lang="pt-br"> <!-- Inicia o documento HTML e define o idioma como Português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (Unicode) -->
+  <meta http-equiv="X-UA-Compatible" content="pt-br"> <!-- Configura a compatibilidade do navegador -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização em dispositivos móveis -->
+  <title>Criptografador de Texto</title> <!-- Define o título da página -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conecta ao servidor de fontes do Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet"> <!-- Importa uma fonte do Google Fonts -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa um arquivo CSS externo chamado "style.css" -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Importa o Bootstrap CSS -->
+</head>
+<body>
+  <h1 id="titulo1">PALAVRAS SECRETAS</h1> <!-- Título principal da página -->
+
+  <main class="main"> <!-- Define uma seção principal do conteúdo -->
+    <section class="form box"> <!-- Define uma seção para o formulário -->
+      <form id="form-adicionar"> <!-- Inicia um formulário com um ID específico -->
+        <h3 id="">Digite o texto aqui:</h3> <!-- Título para o campo de entrada de texto -->
+        <textarea class="text-input" id="textoEntrada" cols="25" rows="10" placeholder="Somente letras minúsculas, sem acento "></textarea> <!-- Campo de entrada de texto -->
+        <button id="Criptografar" type="submit" class="btn btn-success">Criptografar</button> <!-- Botão para criptografar -->
+        <button id="Descriptografar" type="submit" class="btn btn-danger">Descriptografar</button> <!-- Botão para descriptografar -->
+        <button id="Excluir1" type="submit" class="btn btn-info">Excluir</button> <!-- Botão para excluir -->
+      </form>
+    </section>
+  
+    <section class="msg box"> <!-- Define uma seção para a mensagem criptografada -->
+      <h2 id="">Mensagem Criptografada:</h2> <!-- Título para a mensagem criptografada -->
+      <textarea class="text-input" id="textoSaída" cols="25" rows="10" placeholder="Aqui está o texto final "></textarea> <!-- Campo para a mensagem criptografada -->
+      <button id="Copiar" type="submit" class="btn btn-info">Copiar</button> <!-- Botão para copiar a mensagem -->
+      <input id="Excluir2" class="btn btn-info" type="reset" value="Excluir"> <!-- Botão para excluir a mensagem -->
+    </section>
+  </main>
+
+  <script src="script.js"></script> <!-- Inclui um arquivo JavaScript externo chamado "script.js" -->
+</body>
+<footer class="py-5 bg-black"> <!-- Define um rodapé com classe CSS -->
+  <div class="container">
+    <p class="m-0 text-center text-white medium">Desenvolvido por Pedro Corte</p> <!-- Texto do rodapé -->
+  </div>
+</footer>
+</html>

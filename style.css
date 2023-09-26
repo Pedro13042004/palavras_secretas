@@ -1,0 +1,114 @@
+/* Define estilos globais para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define estilos para o corpo (body) da página */
+body {
+  background-image: url(imagen/llave.jpg); /* Define uma imagem de fundo */
+  background-image: 100%; /* Configura o tamanho da imagem de fundo */
+  background-size: cover; /* Define o tamanho da imagem de fundo para cobrir a tela */
+  background-attachment: fixed; /* Isso faz com que a imagem de fundo seja fixa */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte para o corpo */
+  margin: 0; /* Remove a margem padrão do corpo */
+  padding: 0; /* Remove o preenchimento padrão do corpo */
+  height: 100%; /* Faça o corpo ocupar toda a altura da tela */
+}
+
+/* Define estilos para a classe 'main' */
+.main {
+  width: 80vw; /* Define a largura máxima para 80% da largura da tela */
+  margin: auto; /* Centraliza o conteúdo horizontalmente */
+  display: flex; /* Usa o modelo de layout flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Define estilos para o elemento com o ID 'titulo1' */
+#titulo1 {
+  font-family: 'Sedgwick Ave', cursive; /* Define a fonte para o título */
+  padding: 15px; /* Define o preenchimento interno */
+  width: 30vw; /* Define a largura máxima para 30% da largura da tela */
+  margin-left: 40%; /* Define a margem esquerda para alinhar o título */
+  color: white; /* Define a cor do texto como branco */
+}
+
+/* Define estilos para elementos com a classe 'box' */
+.box {
+  padding: 10px; /* Define o preenchimento interno */
+  margin: 0 10px 0 10px; /* Define as margens */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* Adiciona sombreamento */
+  background-color: rgb(87, 115, 190); /* Define a cor de fundo */
+  border-radius: 0.5em; /* Define o raio da borda */
+  width: 50vw; /* Define a largura máxima para 50% da largura da tela */
+  height: auto; /* Define a altura automática */
+}
+
+/* Define estilos para botões (elementos com a classe 'btn') */
+.btn {
+  border: 0; /* Remove a borda */
+  color: white; /* Define a cor do texto como branco */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  background-color: blue; /* Define a cor de fundo como azul */
+  padding: 10px; /* Define o preenchimento interno */
+  margin-top: 10px; /* Define a margem superior */
+  border-radius: 0.5em; /* Define o raio da borda */
+}
+
+/* Define estilos para campos de entrada de texto (elementos com a classe 'text-input') */
+.text-input {
+  border-radius: 0.5em; /* Define o raio da borda */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Define a borda com transparência */
+  display: block; /* Define como elemento de bloco */
+  padding: 0.5em; /* Define o preenchimento interno */
+  width: 100%; /* Define a largura como 100% */
+  height: 150px; /* Define a altura como 150px */
+  font-style: oblique; /* Define a inclinação da fonte */
+  color: white; /* Define a cor do texto como branco */
+  background-color: black; /* Define a cor de fundo como preto */
+}
+
+/* Define estilos para o elemento com o ID 'fondoTextArea' (que não parece estar sendo usado no HTML) */
+#fondoTextArea {
+  font-style: oblique; /* Define a inclinação da fonte */
+  color: white; /* Define a cor do texto como branco */
+  background-color: black; /* Define a cor de fundo como preto */
+}
+
+/* Define estilos para o rodapé (footer) */
+footer {
+  margin-top: 90px; /* Define a margem superior */
+  color: aliceblue; /* Define a cor do texto como azul claro */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilos para telas menores (por exemplo, smartphones) */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Permita que a imagem de fundo role normalmente em telas menores */
+    background-size: auto; /* Use o tamanho original da imagem para telas menores */
+  }
+
+  .main {
+    flex-direction: column; /* Altera o layout flexbox para coluna */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  #titulo1 {
+    width: 80%; /* Define a largura máxima para 80% da largura da tela */
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .box {
+    width: 80%; /* Define a largura máxima para 80% da largura da tela */
+  }
+}
+
+/* Estilos para telas maiores (por exemplo, desktops) */
+@media (min-width: 1200px) {
+  body {
+    background-size: cover; /* Define o tamanho da imagem de fundo para cobrir a tela */
+  }
+}
+
